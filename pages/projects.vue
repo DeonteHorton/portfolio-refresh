@@ -1,8 +1,8 @@
 <script setup>
 
 const items = ref([
-    // { title: 'title 1', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login' },
-    { title: 'Open AI App', img: '/img/keyboard-redo.jpg', codeLink: 'http://localhost', projectLink: 'http://localhost:3000' },
+    // { title: 'Open AI App', img: '/img/keyboard-redo.jpg', codeLink: 'http://localhost', projectLink: 'http://localhost:3000' },
+    { title: 'Open AI Laravel App', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login' },
     { title: 'Canvas Particles', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html' },
     { title: 'Adventure Game', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.dungeon.rpg', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Adventure.Game/dist/index.html' },
     { title: 'Bootstrap project', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Bloom.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Bloom.project/' },
@@ -61,6 +61,9 @@ const responsiveOptions = ref([
 
     <div class="min-h-screen w-full">
         <div class="mx-auto w-full max-w-7xl md:mt-28 lg:mt-32 px-10 space-y-10">
+            <div class="text-3xl flex flex-col items-center justify-around">
+                <div class="border-b-2 border-black">Projects <span class="oldstyle-nums slashed-zero tabular-nums">{{ items.length }}</span></div>
+            </div>
             <p-carousel class=" z-0" :value="items" :numVisible="3" circular :autoplayInterval="3000" :responsiveOptions="responsiveOptions">
                 <template #item="{ data, index}">
                     <div class="bg-white border-1 surface-border border-round m-2 text-center py-5 px-3 rounded-md flex flex-col space-y-5">
