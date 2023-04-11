@@ -5,8 +5,8 @@
 
 <style>
 
-#about{
-    animation: slide-in 6s;
+/* #about{
+    animation: slide-in 1s;
     animation-delay: 0.4s;
     margin-left: 0%;
     width: 100%;
@@ -19,7 +19,7 @@
     100%{margin-left:0%;
         opacity: 1;
     }
-}
+} */
 
 </style>
 
@@ -27,7 +27,7 @@
 
     <PageHeader title="About Page"/>
 
-    <div id="about" class="mx-auto">
-        hello world
+    <div id="about" class="min-h-screen w-full bg-yellow-400">
+
     </div>
 </template>
