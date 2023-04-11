@@ -18,6 +18,7 @@ import Accordion from 'primevue/accordion';
 import AccordionTab from 'primevue/accordiontab';
 import BadgeDirective from 'primevue/badgedirective';
 import Calendar from 'primevue/calendar';
+import Chip from 'primevue/chip';
 
 import ToastService from 'primevue/toastservice';
 import Toast from 'primevue/toast';
@@ -51,6 +52,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         nuxtApp.vueApp.component('p-accordion', Accordion)
         nuxtApp.vueApp.component('p-accordiontab', AccordionTab)
         nuxtApp.vueApp.component('p-input-calendar', Calendar)
+        nuxtApp.vueApp.component('p-chip', Chip)
         nuxtApp.vueApp.use(PrimeVue, {
             ripple: true
         })

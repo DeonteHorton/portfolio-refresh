@@ -7,13 +7,19 @@
         { href: '/contact', text: 'Contact' },
     ]);
 
+    const socialLinks = [
+      {href: 'https://github.com/DeonteHorton', icon: 'github'},
+      {href: 'https://www.linkedin.com/in/deonte-horton-b34aab189/', icon: 'linkedin'},
+      {href: 'https://twitter.com/Deonte_Horton_', icon: 'twitter'},
+    ]
+
     const route = useRoute();
 
     const navOpen = ref(false);
 </script>
 
 <template>
-  <div class="min-h-full">
+  <div class="min-h-full font-mono">
     <nav class="bg-gradient-to-t from-gray-900 to-black sticky top-0">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -23,14 +29,16 @@
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
-                <NuxtLink v-for="link in navLinks" :class="[link.href == route.path ? 'bg-gray-600 text-white rounded-md px-3 py-2 text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium', 'transition ease-in-out hover:-translate-y-1 hover:scale-120']" :to="link.href">{{ link.text }}</NuxtLink>
+                <NuxtLink v-for="link in navLinks" :class="[link.href == route.path ? 'bg-gray-600 text-white rounded-md px-3 py-2 text-sm font-medium animate-pulse' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium', 'transition ease-in-out hover:-translate-y-1 hover:scale-120 ']" :to="link.href">{{ link.text }}</NuxtLink>
+                <a target="_blank" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition ease-in-out hover:-translate-y-1 hover:scale-120 ">
+                    Resume
+                </a>
               </div>
             </div>
           </div>
           <div class="hidden md:block">
             <div class="ml-4 flex items-center space-x-3 md:ml-6">
-                <a target="_blank" href="https://github.com/DeonteHorton"><i class="pi pi-github text-blue-400 transition ease-in-out hover:-translate-y-1 hover:scale-120" style="font-size: 1.3rem;" ></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/deonte-horton-b34aab189/"><i class="pi pi-linkedin text-blue-400 transition ease-in-out hover:-translate-y-1 hover:scale-120" style="font-size: 1.3rem;" ></i></a>
+                <a v-for="link in socialLinks" target="_blank" :href="link.href"><i :class="`pi pi-${link.icon} text-blue-400 transition ease-in-out hover:-translate-y-1 hover:scale-120`" style="font-size: 1.3rem;" ></i></a>
             </div>
           </div>
           <div class="-mr-2 flex md:hidden">
@@ -54,17 +62,19 @@
       <div v-show="navOpen" class="md:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <NuxtLink @click="navOpen == true ? navOpen = false : null" v-for="link in navLinks" :class="[link.href == route.path ? 'bg-gray-600 text-white block rounded-md px-3 py-2 text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium']" :to="link.href">{{ link.text }}</NuxtLink>
+          <a target="_blank" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            Resume
+          </a>
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
           <div class="flex items-center space-x-5 px-5">
-                <a target="_blank" href="https://github.com/DeonteHorton"><i class="pi pi-github text-blue-400" style="font-size: 1.5rem;" ></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/deonte-horton-b34aab189/"><i class="pi pi-linkedin text-blue-400" style="font-size: 1.5rem;" ></i></a>
+              <a v-for="link in socialLinks" target="_blank" :href="link.href"><i :class="`pi pi-${link.icon} text-blue-400`" style="font-size: 1.5rem;" ></i></a>
           </div>
         </div>
       </div>
     </nav>
 
-    <main >
+    <main class="bg-gradient-to-l from-gray-200 to-gray-400">
       <slot />
     </main>
   </div>
