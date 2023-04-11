@@ -20,7 +20,7 @@
 
 <template>
   <div class="min-h-full font-mono">
-    <nav class="bg-gradient-to-t from-gray-900 to-black sticky top-0">
+    <nav class="bg-gradient-to-t from-gray-900 to-black sticky top-0 z-40">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
@@ -74,7 +74,7 @@
       </div>
     </nav>
 
-    <main class="bg-gradient-to-l from-gray-200 to-gray-400">
+    <main class="bg-gradient-to-l from-gray-200 to-gray-400 z-30">
       <slot />
     </main>
   </div>
