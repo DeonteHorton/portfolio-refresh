@@ -1,5 +1,13 @@
+<script setup>
+
+
+</script>
+
 <template>
-    <div>
-        contact
+
+    <PageHeader title="Contact Page"/>
+
+    <div class="mx-auto">
+        hello world
     </div>
 </template>

@@ -10,7 +10,6 @@ import InputText from 'primevue/inputtext';
 import Dialog from 'primevue/dialog';
 import OverlayPanel from 'primevue/overlaypanel';
 import Tag from 'primevue/tag';
-import Chart from 'primevue/chart';
 import Card from 'primevue/card';
 import ToggleButton from 'primevue/togglebutton';
 import ColorPicker from 'primevue/colorpicker';
@@ -45,7 +44,6 @@ export default defineNuxtPlugin((nuxtApp) => {
         nuxtApp.vueApp.component('p-confirmdialog', ConfirmDialog)
         nuxtApp.vueApp.component('p-confirmpopup', ConfirmPopup)
         nuxtApp.vueApp.component('p-tag', Tag)
-        nuxtApp.vueApp.component('p-chart', Chart)
         nuxtApp.vueApp.component('p-card', Card)
         nuxtApp.vueApp.component('p-togglebutton', ToggleButton)
         nuxtApp.vueApp.component('p-colorpicker', ColorPicker)

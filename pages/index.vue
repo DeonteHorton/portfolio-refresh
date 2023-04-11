@@ -3,11 +3,11 @@
 
 </script>
 
-
-
 <template>
 
-    <div class="bg-[url(/assets/img/keyboard-redo.jpg)] w-full h-full ">
+    <PageHeader title="Home Page"/>
+
+    <div class="mx-auto">
         hello world
     </div>
 </template>
