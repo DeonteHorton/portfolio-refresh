@@ -2,17 +2,17 @@
 
 const items = ref([
     // { title: 'Open AI App', img: '/img/keyboard-redo.jpg', codeLink: 'http://localhost', projectLink: 'http://localhost:3000' },
-    { title: 'Open AI Laravel App', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login' },
-    { title: 'Canvas Particles', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html' },
-    { title: 'Adventure Game', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.dungeon.rpg', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Adventure.Game/dist/index.html' },
-    { title: 'Bootstrap project', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Bloom.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Bloom.project/' },
-    { title: '960 project', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.detroix.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.detroix.project/' },
-    { title: '960 project', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.airbox.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.airbox.project/' },
-    { title: 'Playground area', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.pacman.playground', projectLink: 'https://deontehorton.github.io/Deonte-Horton.pacman.playground/' },
-    { title: 'Bootstrap project', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.g-umbrella', projectLink: 'https://deontehorton.github.io/Deonte-Horton.g-umbrella/' },
-    { title: 'Simple Calculator', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Simple.Calc', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Simple.Calc/' },
-    { title: 'Age Tester', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Age.Tester', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Age.Tester/' },
-    { title: 'Password Validation', img: '/img/keyboard-redo.jpg', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.password.validation', projectLink: 'https://deontehorton.github.io/Deonte-Horton.password.validation/' },
+    { title: 'Open AI Laravel App', img: '/img/ai-app.png', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login' },
+    { title: 'Canvas Particles', img: '/img/canvas.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html' },
+    { title: 'Adventure Game', img: '/img/rpg.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.dungeon.rpg', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Adventure.Game/dist/index.html' },
+    { title: 'Bootstrap project', img: '/img/bloom.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Bloom.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Bloom.project/' },
+    { title: '960 project', img: '/img/detroix1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.detroix.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.detroix.project/' },
+    { title: '960 project', img: '/img/airbox1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.airbox.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.airbox.project/' },
+    { title: 'Playground area', img: '/img/pac.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.pacman.playground', projectLink: 'https://deontehorton.github.io/Deonte-Horton.pacman.playground/' },
+    { title: 'Bootstrap project', img: '/img/umbrella.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.g-umbrella', projectLink: 'https://deontehorton.github.io/Deonte-Horton.g-umbrella/' },
+    { title: 'Simple Calculator', img: '/img/calc.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Simple.Calc', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Simple.Calc/' },
+    { title: 'Age Tester', img: '/img/age (2).png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Age.Tester', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Age.Tester/' },
+    { title: 'Password Validation', img: '/img/password.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.password.validation', projectLink: 'https://deontehorton.github.io/Deonte-Horton.password.validation/' },
 ])
 
 const responsiveOptions = ref([
