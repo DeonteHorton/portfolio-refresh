@@ -1,5 +1,4 @@
 <script setup>
-    const test = ref('hello there world wide!! how are you?');
     const navLinks = ref([
         { href: '/', text: 'Home' },
         { href: '/about', text: 'About' },
@@ -25,12 +24,12 @@
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              <p-image imageClass="h-16 w-16 rounded-full" src="/img/git-profile.jpg" alt="Your Company" preview />
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <NuxtLink v-for="link in navLinks" :class="[link.href == route.path ? 'bg-gray-600 text-white rounded-md px-3 py-2 text-sm font-medium animate-pulse' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium', 'transition ease-in-out hover:-translate-y-1 hover:scale-120 ']" :to="link.href">{{ link.text }}</NuxtLink>
-                <a target="_blank" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition ease-in-out hover:-translate-y-1 hover:scale-120 ">
+                <a target="_blank" href="https://docs.google.com/document/d/1XP-EEvDjPHG2MC3-bG_GacJ_sJly3zJmokDOf1ItX8w/export?format=pdf" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition ease-in-out hover:-translate-y-1 hover:scale-120 ">
                     Resume
                 </a>
               </div>
@@ -62,7 +61,7 @@
       <div v-show="navOpen" class="md:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <NuxtLink @click="navOpen == true ? navOpen = false : null" v-for="link in navLinks" :class="[link.href == route.path ? 'bg-gray-600 text-white block rounded-md px-3 py-2 text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium']" :to="link.href">{{ link.text }}</NuxtLink>
-          <a target="_blank" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+          <a target="_blank" href="https://docs.google.com/document/d/1XP-EEvDjPHG2MC3-bG_GacJ_sJly3zJmokDOf1ItX8w/export?format=pdf" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Resume
           </a>
         </div>
