@@ -1,18 +1,20 @@
 <script setup>
 
 const items = ref([
-    // { title: 'Open AI App', img: '/img/keyboard-redo.jpg', codeLink: 'http://localhost', projectLink: 'http://localhost:3000' },
-    { title: 'Open AI Laravel App', img: '/img/ai-app.png', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login' },
-    { title: 'Canvas Particles', img: '/img/canvas.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html' },
-    { title: 'Adventure Game', img: '/img/rpg.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.dungeon.rpg', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Adventure.Game/dist/index.html' },
-    { title: 'Bootstrap project', img: '/img/bloom.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Bloom.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Bloom.project/' },
-    { title: '960 project', img: '/img/detroix1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.detroix.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.detroix.project/' },
-    { title: '960 project', img: '/img/airbox1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.airbox.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.airbox.project/' },
-    { title: 'Playground area', img: '/img/pac.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.pacman.playground', projectLink: 'https://deontehorton.github.io/Deonte-Horton.pacman.playground/' },
-    { title: 'Bootstrap project', img: '/img/umbrella.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.g-umbrella', projectLink: 'https://deontehorton.github.io/Deonte-Horton.g-umbrella/' },
-    { title: 'Simple Calculator', img: '/img/calc.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Simple.Calc', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Simple.Calc/' },
-    { title: 'Age Tester', img: '/img/age (2).png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Age.Tester', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Age.Tester/' },
-    { title: 'Password Validation', img: '/img/password.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.password.validation', projectLink: 'https://deontehorton.github.io/Deonte-Horton.password.validation/' },
+    { title: 'Portfolio Refresh', img: '/img/portfolio-refresh.png', codeLink: 'https://github.com/DeonteHorton/portfolio-refresh', projectLink: 'https://deonte,dev', tech: ['Nuxt 3', 'JavaScript', 'Vue', 'PrimeVue', 'TailwindCSS'] },
+    { title: 'Open AI Laravel App', img: '/img/ai-app.png', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login', tech: ['Laravel', 'Vue', 'JavaScript', 'PHP', 'InertiaJS', 'Jet Stream', 'TailwindCSS', 'OpenAI', 'PrimeVue', 'MariaDB' ] },
+    { title: 'Destiny 2 Clan Sign Website', img: '/img/destiny2.png', codeLink: 'https://github.com/DeonteHorton/Final-Project', projectLink: 'https://destiny2.deonte.dev', tech: ['ReactJS', 'Nodejs', 'Nodejs Express', 'CSS', 'JavaScript', 'SocketIO', 'MySQL'] },
+    { title: 'Canvas Particles', img: '/img/canvas.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html', tech: ['HTML', 'CSS', 'JavaScript'] },
+    { title: 'Adventure Game', img: '/img/rpg.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.dungeon.rpg', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Adventure.Game/dist/index.html', tech: ['HTML', 'CSS', 'TypeScript', 'Phaser'] },
+    { title: 'Simple Calculator', img: '/img/calc.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Simple.Calc', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Simple.Calc/', tech: ['HTML', 'CSS', 'JavaScript'] },
+    { title: 'Age Tester', img: '/img/age (2).png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Age.Tester', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Age.Tester/', tech: ['HTML', 'CSS', 'JavaScript'] },
+    { title: 'Password Validation', img: '/img/password.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.password.validation', projectLink: 'https://deontehorton.github.io/Deonte-Horton.password.validation/', tech: ['HTML', 'CSS', 'JavaScript'] },
+    { title: 'Old Portfolio Site', img: '/img/portfolio-old.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.github.io', projectLink: 'https://portfolio.deonte.dev/', tech: ['HTML', 'CSS']},
+    { title: 'Bootstrap project', img: '/img/bloom.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.Bloom.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.Bloom.project/', tech: ['HTML', 'CSS'] },
+    { title: '960 project', img: '/img/detroix1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.detroix.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.detroix.project/', tech: ['HTML', 'CSS'] },
+    { title: '960 project', img: '/img/airbox1.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.airbox.project', projectLink: 'https://deontehorton.github.io/Deonte-Horton.airbox.project/', tech: ['HTML', 'CSS'] },
+    { title: 'Playground area', img: '/img/pac.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.pacman.playground', projectLink: 'https://deontehorton.github.io/Deonte-Horton.pacman.playground/', tech: ['HTML', 'CSS', 'JavaScript'] },
+    { title: 'Bootstrap project', img: '/img/umbrella.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.g-umbrella', projectLink: 'https://deontehorton.github.io/Deonte-Horton.g-umbrella/', tech: ['HTML', 'CSS'] },
 ])
 
 const responsiveOptions = ref([
@@ -76,6 +78,12 @@ const responsiveOptions = ref([
                             <a target="_blank" :href="data.projectLink">
                                 <p-button label="Project Link" icon="pi pi-external-link" iconPos="right" rounded class="p-button-info p-button-sm" />
                             </a>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-lg italic">Technologies Used</div>
+                            <div class="flex flex-wrap justify-center items-center space-x-1 space-y-1">
+                                <p-chip v-for="tech in data.tech" :label="tech" />
+                            </div>
                         </div>
                     </div>
                 </template>
