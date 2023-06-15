@@ -1,7 +1,7 @@
 <script setup>
 
 const items = ref([
-    { title: 'Portfolio Refresh', img: '/img/portfolio-refresh.png', codeLink: 'https://github.com/DeonteHorton/portfolio-refresh', projectLink: 'https://deonte,dev', tech: ['Nuxt 3', 'JavaScript', 'Vue', 'PrimeVue', 'TailwindCSS'] },
+    { title: 'Portfolio Refresh', img: '/img/portfolio-refresh.png', codeLink: 'https://github.com/DeonteHorton/portfolio-refresh', projectLink: 'https://deonte.dev', tech: ['Nuxt 3', 'JavaScript', 'Vue', 'PrimeVue', 'TailwindCSS'] },
     { title: 'Open AI Laravel App', img: '/img/ai-app.png', codeLink: 'https://github.com/DeonteHorton/laravel-openAI', projectLink: 'https://openai-app.deonte.dev/login', tech: ['Laravel', 'Vue', 'JavaScript', 'PHP', 'InertiaJS', 'Jet Stream', 'TailwindCSS', 'OpenAI', 'PrimeVue', 'MariaDB' ] },
     { title: 'Destiny 2 Clan Sign Website', img: '/img/destiny2.png', codeLink: 'https://github.com/DeonteHorton/Final-Project', projectLink: 'https://destiny2.deonte.dev', tech: ['ReactJS', 'Nodejs', 'Nodejs Express', 'CSS', 'JavaScript', 'SocketIO', 'MySQL'] },
     { title: 'Canvas Particles', img: '/img/canvas.png', codeLink: 'https://github.com/DeonteHorton/Deonte-Horton.particles', projectLink: 'https://deontehorton.github.io/Deonte-Horton.particles/index.html', tech: ['HTML', 'CSS', 'JavaScript'] },
